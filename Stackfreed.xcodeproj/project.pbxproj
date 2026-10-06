@@ -38,6 +38,7 @@
 		B233376F2DB4049F625F95DC /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2254CF67473A95AAE33E9DCE /* Onboarding.swift */; };
 		B2E935C56E31C557F20261E8 /* ArborCap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A44D7E643BB37BA9E37AAB5 /* ArborCap.swift */; };
 		B536AE0B5F06376EAC272AA9 /* ArborTallyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3DAC6E8ED351E9FB255035 /* ArborTallyTests.swift */; };
+		CA716D1A2EC6A724AEE5085A /* AppsFlyerLib-Static in Frameworks */ = {isa = PBXBuildFile; productRef = 201FAFC96CE59BDD6D1798E5 /* AppsFlyerLib-Static */; };
 		CD5F4AFF9CF1A78FADB4961D /* LostBeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E67D546753071F78780393B /* LostBeat.swift */; };
 		D7670AD90B4E429445D9DB91 /* RemontoireGateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08658CEFAC958CF56FC1212A /* RemontoireGateTests.swift */; };
 		DBF0D457F6E284CDE4C347BC /* Pallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EBA0D14B8A075ECC583F04 /* Pallet.swift */; };
@@ -112,6 +113,7 @@
 			files = (
 				146567B78A3B1B595A23768D /* SpriteKit.framework in Frameworks */,
 				721C4B43CD0270B0F19F82BA /* Alamofire in Frameworks */,
+				CA716D1A2EC6A724AEE5085A /* AppsFlyerLib-Static in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +266,7 @@
 			name = Stackfreed;
 			packageProductDependencies = (
 				F775FB7323A93F8FCA9F458F /* Alamofire */,
+				201FAFC96CE59BDD6D1798E5 /* AppsFlyerLib-Static */,
 			);
 			productName = Stackfreed;
 			productReference = 4F6416DF696EC49412EF0A32 /* Stackfreed.app */;
@@ -314,7 +317,8 @@
 			mainGroup = 7AC7672DC199C8912DC7C783;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				CCC992CA20889C47D7E5A81E /* XCRemoteSwiftPackageReference "Alamofire" */,
+				448642FBF19880A6C04C0894 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				1CBB8AD5788EE37D6E22AB67 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 294173C6AC983BA9B0D332D6 /* Products */;
@@ -433,7 +437,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = Stackfreed;
+				INFOPLIST_FILE = "Support/Stackfreed-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Sweet Colloqium";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app does not use the camera.";
@@ -588,7 +593,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = Stackfreed;
+				INFOPLIST_FILE = "Support/Stackfreed-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Sweet Colloqium";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app does not use the camera.";
@@ -666,7 +672,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CCC992CA20889C47D7E5A81E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		1CBB8AD5788EE37D6E22AB67 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework-Static";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.17.9;
+			};
+		};
+		448642FBF19880A6C04C0894 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ymvmj7dsyy-stack/Alamofire";
 			requirement = {
@@ -677,9 +691,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		201FAFC96CE59BDD6D1798E5 /* AppsFlyerLib-Static */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1CBB8AD5788EE37D6E22AB67 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */;
+			productName = "AppsFlyerLib-Static";
+		};
 		F775FB7323A93F8FCA9F458F /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CCC992CA20889C47D7E5A81E /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = 448642FBF19880A6C04C0894 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */

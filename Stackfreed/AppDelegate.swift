@@ -1,5 +1,7 @@
 import UIKit
 import Alamofire
+import AppsFlyerLib
+import AppTrackingTransparency
 
 final class AppDelegate: NSObject, UIApplicationDelegate {
     private static let bind = "com.stackfreed.week"
@@ -8,6 +10,23 @@ final class AppDelegate: NSObject, UIApplicationDelegate {
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
         _ = Self.bind
         APIConfig.apply()
+        AppsFlyerLib.shared().appsFlyerDevKey = "yoeLkxZWUt3Ge7JMRrRvoF"
+        AppsFlyerLib.shared().appleAppID = "6819792026"
+        AppsFlyerLib.shared().waitForATTUserAuthorization(timeoutInterval: 60)
+        NotificationCenter.default.addObserver(
+            self, selector: #selector(applicationDidBecomeActive),
+            name: UIApplication.didBecomeActiveNotification, object: nil
+        )
         return true
+    }
+
+    @objc private func applicationDidBecomeActive() {
+        if #available(iOS 14, *) {
+            ATTrackingManager.requestTrackingAuthorization { @Sendable _ in
+                AppsFlyerLib.shared().start()
+            }
+        } else {
+            AppsFlyerLib.shared().start()
+        }
     }
 }
