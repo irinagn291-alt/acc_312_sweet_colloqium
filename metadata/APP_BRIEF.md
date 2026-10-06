@@ -1,4 +1,4 @@
-<!-- gf-brief source=ddd7c9783828778506a8ec0707124539c93c5f2e31ce66d50717a7ad1545feab written=2026-10-06T20:37:00+03:00 -->
+<!-- gf-brief source=ddd7c9783828778506a8ec0707124539c93c5f2e31ce66d50717a7ad1545feab written=2026-10-06T20:55:34+03:00 -->
 # Sweet Colloqium
 ## What it is
 Sweet Colloqium is a private week habit app for one habit at a time. You close today first. If a scheduled day already slipped, this week’s one lost beat can mend that silent day so the miss still counts. It is for people who want a week that still holds after a miss, not a streak that zeros when one day is left open.
