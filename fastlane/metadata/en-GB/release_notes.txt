@@ -1,0 +1,9 @@
+Version 1.0. First release of Sweet Colloqium, a private week habit app for one habit at a time.
+
+• Onboarding, three pages, with "Skip" at the top right on every page
+• Rings with "Close" for today, seven-day rings, "Mend target", "This week", "Day chain", and "Lost beat held" or "Lost beat spent"
+• One lost beat per week to Mend a silent past scheduled day so a "Mended miss. Still counts."
+• Dashboard with "Closed days", "X of Y" "closed of scheduled", and "Streak N"
+• Lost beat with "Mend" on a silent past scheduled day
+• Settings with "Habit", "Scheduled weekdays", "Save habit", "Contact Stackfreed", "Re-run onboarding", and "Reset all data"
+• Data stays on this device. Light only. Portrait only on iPhone and iPad. No camera, photos, microphone, location, notifications, or tracking.

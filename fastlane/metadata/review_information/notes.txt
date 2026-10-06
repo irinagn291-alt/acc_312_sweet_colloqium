@@ -1,0 +1,19 @@
+The app never asks for camera, photos, microphone, location, notifications, or tracking. No permission prompt appears, and there is no usage-description string because those permissions are not used.
+
+There is no login, no in-app purchase, no user-generated content, no account deletion flow, and no App Tracking Transparency prompt.
+
+Sweet Colloqium is a private week habit app for one habit at a time. You close today first. If a scheduled day already slipped, this week's one lost beat can mend that silent day so the miss still counts. It is for people who want a week that still holds after a miss, not a streak that zeros when one day is left open.
+
+No credentials or demo account are needed. On a device that has never finished onboarding, a cold launch shows the system launch screen (no wordmark or buttons), then a short wait. A spinner may appear if that wait lasts. Then onboarding, three pages, with "Skip" at the top right on every page. Page 1 is "The week still holds." with optional "Habit name" already filled "Daily lap" and "Continue". Page 2 is "Tap today's ring." and "Continue". Page 3 is "Mend a day that slipped." and "Close the first ring", which opens Rings and seats or renames the habit from "Habit name", or "Daily lap" if blank. "Skip" from any page opens Rings and seats "Daily lap" when there is no habit yet. Default scheduled weekdays after "Skip" or a first finish are Monday through Friday, plus today, plus yesterday, using the device calendar. On Simulator, a first launch may skip onboarding and open Rings with habit "Quiet lap", a prior week of Closed days plus one Mended day, some past days this week already Closed, the earliest past scheduled day this week left Open, and today still Open so "Close" is enabled. On a physical device there is no sample week. A later launch opens Rings with the saved habit and marks.
+
+There are no tabs. Rings stays on screen. The app is light only. Portrait only on iPhone and iPad. Top left "This week". Top right icon-only "Dashboard", "Lost beat", and "Settings". If "No habit yet.", tap "Close the first ring" to seat "Daily lap" (it does not close today), then tap "Close". "Close" is enabled only when today is a scheduled day that is still Open. Seven rings show "Closed", "Mended", "Open", "Soon", or "Rest". Tapping today runs Close. Tapping another day tries to mend it. Sheets: "Dashboard" for "Closed days", "X of Y" "closed of scheduled", and "Streak N"; "Lost beat" to tap "Mend" on a silent past scheduled day; "Settings" for "Habit", "Scheduled weekdays", "Save habit", "Contact Stackfreed", "Re-run onboarding", and "Reset all data" (confirm "Reset all local marks?"). "Reset all data" destroys the habit and every mark on this device, then returns to onboarding. "Keep marks" cancels. "Save habit" is disabled when the name is only spaces or no weekday is selected. The last remaining scheduled day cannot be turned off. Empty Dashboard "Close today's ring" and empty Lost beat "Close the first ring" only dismiss the sheet. "Back to Rings" also dismisses Lost beat. On a wide iPad, "What Save habit will change" can Close or Mend. Dismissing a sheet returns to Rings. After a first "Skip" or finish, yesterday is often already a silent scheduled day, so Mend can be available immediately. "Re-run onboarding" returns to the three pages. The existing habit and marks remain. "Skip" keeps the current name.
+
+Everything stays on this device. The on-screen control is "Contact Stackfreed". It opens the support page.
+
+There is no region lock. Copy is English. Week start, weekday names, dates, and numbers follow the device calendar and locale.
+
+No licence or regulated-industry paperwork applies because the app does not show health, medical, or product-health information.
+
+The app does not show health, medical, or product-health information and has no citations. It is a personal log only and gives no recommendations.
+
+The app does not scan barcodes or QR codes.
