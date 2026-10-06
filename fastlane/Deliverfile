@@ -23,16 +23,15 @@ submission_information({
 })
 
 # The binary is uploaded by the archive workflow, so deliver only carries the metadata.
-# Language upload still needs an editable version. With skip_app_version_update,
-# a first listing has nothing to edit and fails:
-# "Cannot update languages - could not find an editable version for 'IOS'".
+# Do not create a version here. App Store Connect answers
+# "You cannot create a new version of the App in the current state"
+# while the current version is in review or pending release.
 skip_binary_upload true
 skip_screenshots false
 screenshots_path("./fastlane/screenshots")
 overwrite_screenshots true
 screenshot_processing_timeout 600
-skip_app_version_update false
-app_version "1.0.0"
+skip_app_version_update true
 
 submit_for_review false
 automatic_release true
