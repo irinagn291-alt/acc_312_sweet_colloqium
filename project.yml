@@ -34,6 +34,7 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.stackfreed.week
         PRODUCT_NAME: Stackfreed
         GENERATE_INFOPLIST_FILE: 'YES'
+        INFOPLIST_KEY_NSUserTrackingUsageDescription: "We use this identifier to personalize your experience and measure app performance."
         INFOPLIST_KEY_ITSAppUsesNonExemptEncryption: 'NO'
         INFOPLIST_KEY_CFBundleDisplayName: Sweet Colloqium
         INFOPLIST_KEY_UILaunchScreen_Generation: 'YES'

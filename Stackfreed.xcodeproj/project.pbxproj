@@ -437,6 +437,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We use this identifier to personalize your experience and measure app performance.";
 				INFOPLIST_FILE = "Support/Stackfreed-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Sweet Colloqium";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
@@ -593,6 +594,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We use this identifier to personalize your experience and measure app performance.";
 				INFOPLIST_FILE = "Support/Stackfreed-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Sweet Colloqium";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
